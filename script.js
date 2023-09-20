@@ -1,8 +1,7 @@
-let sortedArray = nums.sort();
-for (let i = 0; i < sortedArray.length; i++) {
-    if (sortedArray[i + 1] > sortedArray[i]) {
-
+Array.prototype.last = function () {
+    if (this.length === 0) {
+        return -1
     } else {
-        return sortedArray[i]
+        return this[this.length - 1]
     }
 }
